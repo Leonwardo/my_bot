@@ -93,22 +93,18 @@ import { SqliteDriver } from "quick.db";
             const { members: memberManager } = guild;
 
             const embed_per = new EmbedBuilder({
-                author: {
-                    name: "Fortal City",
-                    iconURL: "https://cdn.discordapp.com/attachments/1166067939544404048/1166110546861502474/GIF.gif?ex=65494c13&is=6536d713&hm=dc6ac1286c1d69a1265aa901ed78239a3cbb5cf60544ed8f1710f1bfb59be179&",
-                },
                 title: titulo_embed,
                 description: descricao_embed,
                 footer: {text: footer_embed},
                 color: 0x2b2d31,
             })
 
-            const channel_embed = interaction.channel as TextChannel;  // canal de encomendas // canal de log
+            const channel_embed = interaction.channel as TextChannel;
   
-
             channel_embed.send({ embeds: [embed_per] });
 
-            const embed_log_embed = new EmbedBuilder({
+
+/*             const embed_log_embed = new EmbedBuilder({
                 title: "Embed",
                 description: `O usuario ${member} criou um embed na sala ${channel_embed}`,
                 color: 0x2b2d31,
@@ -118,7 +114,7 @@ import { SqliteDriver } from "quick.db";
                 "1165472355003420763"
                 ) as TextChannel;
             channel_log.send({ embeds: [embed_log_embed]});
-            modalInteraction.reply({ content: "Embed criado com sucesso!", ephemeral: true });
+            modalInteraction.reply({ content: "Embed criado com sucesso!", ephemeral: true }); */
 
         }
     })
