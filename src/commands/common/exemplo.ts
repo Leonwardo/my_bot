@@ -28,8 +28,8 @@ import {
 import { SqliteDriver } from "quick.db";
 
     export default new Command({
-        name: "a",
-        description: "a",
+        name: "",
+        description: "",
         type: ApplicationCommandType.ChatInput,
         async run({ interaction, options }){
 

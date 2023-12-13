@@ -64,7 +64,7 @@ import { SqliteDriver } from "quick.db";
                         label: "Footer",
                         placeholder: "Digite o footer do embed",
                         style: TextInputStyle.Paragraph,
-                        required: true,
+                        required: false,
                     })
                 ]
             })
@@ -113,8 +113,9 @@ import { SqliteDriver } from "quick.db";
             const channel_log = guild.channels.cache.get(
                 "1165472355003420763"
                 ) as TextChannel;
-            channel_log.send({ embeds: [embed_log_embed]});
-            modalInteraction.reply({ content: "Embed criado com sucesso!", ephemeral: true }); */
+            channel_log.send({ embeds: [embed_log_embed]});*/
+
+            modalInteraction.reply({ content: "Embed criado com sucesso!", ephemeral: true }); 
 
         }
     })
